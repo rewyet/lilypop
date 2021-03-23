@@ -4,12 +4,16 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf public/ resources/ builds/",
+    "start": "hugo server --buildDrafts --buildFuture",
+    "build": "hugo",
+    "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "hugo-extended": "^0.82.0",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.4"
