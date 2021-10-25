@@ -1,4 +1,4 @@
-baseURL: http://lilypop.net/
+baseURL: https://lilypop.netlify.app/
 languageCode: en-us
 title: Lilypop
 theme: "PaperMod"
