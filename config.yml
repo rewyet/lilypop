@@ -1,0 +1,36 @@
+baseURL: http://lilypop.net/
+languageCode: en-us
+title: Lilypop
+theme: "PaperMod"
+mode: "Profile"
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
+
+
+params:
+  profileMode:
+    enabled: true
+    title: "Lilypop" # optional default will be site title
+    subtitle: "Writing stuff"
+    # imageUrl: "<image link>" # optional
+    # imageTitle: "<title of image as alt>" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Blog
+        url: "/blog"
+      # - name: Github
+      #   url: "https://github.com/"

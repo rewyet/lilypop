@@ -1,14 +1,21 @@
+# [build]
+#   command = "npm run build"
+#   publish = "public"
+
+# [build.environment]
+#   NODE_VERSION = "14"
+#   NPM_VERSION = "6.14.8"
+#   NPM_FLAGS = "--no-optional"
+
+# [context.deploy-preview]
+#   command = "npm run build:preview"
+
+# [context.branch-deploy]
+#   command = "npm run build:preview"
+
 [build]
-  command = "npm run build"
+  command = "hugo"
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "14"
-  NPM_VERSION = "6.14.8"
-  NPM_FLAGS = "--no-optional"
-
-[context.deploy-preview]
-  command = "npm run build:preview"
-
-[context.branch-deploy]
-  command = "npm run build:preview"
+  HUGO_VERSION = "0.88.1"
